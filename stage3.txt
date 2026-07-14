@@ -1,0 +1,39 @@
+
+shahd@shahd:~$ hostname
+shahd
+shahd@shahd:~$ pwd
+/home/shahd
+shahd@shahd:~$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           3.3Gi       450Mi       2.6Gi       1.1Mi       470Mi       2.9Gi
+Swap:          2.0Gi          0B       2.0Gi
+shahd@shahd:~$ df -h
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              680M  1.1M  679M   1% /run
+/dev/mapper/ubuntu--vg-ubuntu--lv   12G  5.2G  5.5G  49% /
+tmpfs                              1.7G     0  1.7G   0% /dev/shm
+none                               1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs                              1.7G     0  1.7G   0% /tmp
+none                               1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/sda2                          2.0G  185M  1.7G  11% /boot
+none                               1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+none                               1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs                              340M  8.0K  340M   1% /run/user/1000
+shahd@shahd:~$ uptime
+ 12:13:24 up 14 min,  2 users,  load average: 0.00, 0.00, 0.00
+shahd@shahd:~$ mkdir -p apps/logs
+shahd@shahd:~$ nano about-me.txt
+shahd@shahd:~$ nano about-me.txt
+shahd@shahd:~$ cat about-me.txt
+name : shahd AL Abdali
+Language: JAVA
+shahd@shahd:~$ cp about-me.txt apps/
+shahd@shahd:~$ mv apps/about-me.txt apps/profile.txt
+shahd@shahd:~$ rm about-me.txt
+shahd@shahd:~$ ls -lh apps
+total 8.0K
+drwxrwxr-x 2 shahd shahd 4.0K Jul 13 12:13 logs
+-rw-rw-r-- 1 shahd shahd   38 Jul 13 12:18 profile.txt
+shahd@shahd:~$ ps aux | wc -l
+143
+shahd@shahd:~$
